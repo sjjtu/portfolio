@@ -1,0 +1,42 @@
+.wrapper {
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .typing-demo {
+    width: 20ch;
+    animation: typing 7s steps(20), blink .5s step-end infinite alternate;
+    animation-iteration-count: infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+        width: 0
+    }
+
+    50% {
+        width: 20ch;
+    }
+
+    90% {
+        width: 20ch;
+    }
+    100%{
+        width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
